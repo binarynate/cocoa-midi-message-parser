@@ -11,6 +11,22 @@
 
 @implementation SDMidiParser
 
+midi_message_parser_t *_messageParser;
+
+- (id)init {
+    self = [super init];
+    
+    if (self) {
+        _messageParser = new_midi_message_parser();
+    }
+    
+    return self;
+}
+
+- (void)dealloc {
+    free_midi_message_parser(_messageParser);
+}
+
 + (NSMutableArray *)convertPacketListToData: (MIDIPacketList *)packetList {
     
     

@@ -11,7 +11,9 @@
 		620BBADC1E0E50CC00B4840A /* SDMidiParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 620BBADA1E0E50CC00B4840A /* SDMidiParser.h */; };
 		620BBADD1E0E50CC00B4840A /* SDMidiParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 620BBADB1E0E50CC00B4840A /* SDMidiParser.m */; };
 		620BBAE01E0E50EA00B4840A /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620BBADF1E0E50EA00B4840A /* CoreMIDI.framework */; };
-		620BBAE41E0E536500B4840A /* midi-message-parser in Resources */ = {isa = PBXBuildFile; fileRef = 620BBAE31E0E536500B4840A /* midi-message-parser */; };
+		623C0B401E0F292700F3BFD6 /* midi-message-parser in Resources */ = {isa = PBXBuildFile; fileRef = 623C0B3F1E0F292700F3BFD6 /* midi-message-parser */; };
+		623C0B451E0F2BCA00F3BFD6 /* midi.c in Sources */ = {isa = PBXBuildFile; fileRef = 623C0B431E0F2BCA00F3BFD6 /* midi.c */; };
+		623C0B461E0F2BCA00F3BFD6 /* midi.h in Headers */ = {isa = PBXBuildFile; fileRef = 623C0B441E0F2BCA00F3BFD6 /* midi.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,9 @@
 		620BBADA1E0E50CC00B4840A /* SDMidiParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMidiParser.h; sourceTree = "<group>"; };
 		620BBADB1E0E50CC00B4840A /* SDMidiParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMidiParser.m; sourceTree = "<group>"; };
 		620BBADF1E0E50EA00B4840A /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		620BBAE31E0E536500B4840A /* midi-message-parser */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "midi-message-parser"; sourceTree = "<group>"; };
+		623C0B3F1E0F292700F3BFD6 /* midi-message-parser */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "midi-message-parser"; path = "/Users/nathan.hill/repos/sonic.design/cocoa-midi-message-parser/midi-message-parser"; sourceTree = "<absolute>"; };
+		623C0B431E0F2BCA00F3BFD6 /* midi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = midi.c; path = "midi-message-parser/src/midi.c"; sourceTree = "<group>"; };
+		623C0B441E0F2BCA00F3BFD6 /* midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = midi.h; path = "midi-message-parser/src/midi.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +43,8 @@
 		620BBAC51E0E4D3100B4840A = {
 			isa = PBXGroup;
 			children = (
-				620BBAE31E0E536500B4840A /* midi-message-parser */,
+				623C0B431E0F2BCA00F3BFD6 /* midi.c */,
+				623C0B441E0F2BCA00F3BFD6 /* midi.h */,
 				620BBAD11E0E4D3100B4840A /* cocoa-midi-message-parser */,
 				620BBAD01E0E4D3100B4840A /* Products */,
 				620BBADE1E0E50EA00B4840A /* Frameworks */,
@@ -81,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				620BBAD41E0E4D3200B4840A /* cocoa_midi_message_parser.h in Headers */,
+				623C0B461E0F2BCA00F3BFD6 /* midi.h in Headers */,
 				620BBADC1E0E50CC00B4840A /* SDMidiParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620BBAE41E0E536500B4840A /* midi-message-parser in Resources */,
+				623C0B401E0F292700F3BFD6 /* midi-message-parser in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				623C0B451E0F2BCA00F3BFD6 /* midi.c in Sources */,
 				620BBADD1E0E50CC00B4840A /* SDMidiParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
