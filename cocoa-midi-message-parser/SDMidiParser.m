@@ -27,26 +27,33 @@ midi_message_parser_t *_messageParser;
     free_midi_message_parser(_messageParser);
 }
 
-+ (NSMutableArray *)convertPacketListToData: (MIDIPacketList *)packetList {
-    
+- (NSMutableArray *)parsePacketList: (MIDIPacketList *)packetList {
     
     NSLog(@"Converting a MIDI packet list with %d messages", packetList->numPackets);
     
-    NSMutableArray *packets = [[NSMutableArray alloc] init];
+    NSMutableArray *wrappedMidiMessages = [[NSMutableArray alloc] init];
     
-    MIDIPacket *packetStruct = &packetList->packet[0];
+    MIDIPacket *packet = &packetList->packet[0];
     for (int i = 0; i < packetList->numPackets; i++) {
         
+        midi_message_queue_t *messageQueue = parse_midi_messages(_messageParser, packet->data, packet->length);
         
-        NSData *packet = [[NSData alloc] initWithBytes: packetStruct->data length: packetStruct->length];
-        
-        
-        [packets addObject: packet];
-        
-        packetStruct = MIDIPacketNext(packetStruct);
+        if (messageQueue) {
+            
+            for (int i = 0; i < messageQueue->length; i++) {
+                midi_message_t *message = messageQueue->messages[0];
+                
+                NSData *wrappedMessage = [[NSData alloc] initWithBytes: message->bytes length: message->bytes_length];
+                
+                [wrappedMidiMessages addObject: wrappedMessage];
+            }
+            
+            free_midi_message_queue(messageQueue);
+        }
+        packet = MIDIPacketNext(packet);
     }
     
-    return packets;
+    return wrappedMidiMessages;
 }
 
 
