@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		620BBAD41E0E4D3200B4840A /* cocoa-midi-message-parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 620BBAD21E0E4D3100B4840A /* cocoa-midi-message-parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		620BBADC1E0E50CC00B4840A /* SDMidiParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 620BBADA1E0E50CC00B4840A /* SDMidiParser.h */; };
+		620BBADD1E0E50CC00B4840A /* SDMidiParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 620BBADB1E0E50CC00B4840A /* SDMidiParser.m */; };
+		620BBAE01E0E50EA00B4840A /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620BBADF1E0E50EA00B4840A /* CoreMIDI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		620BBACF1E0E4D3100B4840A /* cocoa_midi_message_parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cocoa_midi_message_parser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		620BBAD21E0E4D3100B4840A /* cocoa-midi-message-parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cocoa-midi-message-parser.h"; sourceTree = "<group>"; };
 		620BBAD31E0E4D3200B4840A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620BBADA1E0E50CC00B4840A /* SDMidiParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMidiParser.h; sourceTree = "<group>"; };
+		620BBADB1E0E50CC00B4840A /* SDMidiParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMidiParser.m; sourceTree = "<group>"; };
+		620BBADF1E0E50EA00B4840A /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620BBAE01E0E50EA00B4840A /* CoreMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +39,7 @@
 			children = (
 				620BBAD11E0E4D3100B4840A /* cocoa-midi-message-parser */,
 				620BBAD01E0E4D3100B4840A /* Products */,
+				620BBADE1E0E50EA00B4840A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +56,18 @@
 			children = (
 				620BBAD21E0E4D3100B4840A /* cocoa-midi-message-parser.h */,
 				620BBAD31E0E4D3200B4840A /* Info.plist */,
+				620BBADA1E0E50CC00B4840A /* SDMidiParser.h */,
+				620BBADB1E0E50CC00B4840A /* SDMidiParser.m */,
 			);
 			path = "cocoa-midi-message-parser";
+			sourceTree = "<group>";
+		};
+		620BBADE1E0E50EA00B4840A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				620BBADF1E0E50EA00B4840A /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				620BBAD41E0E4D3200B4840A /* cocoa-midi-message-parser.h in Headers */,
+				620BBADC1E0E50CC00B4840A /* SDMidiParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620BBADD1E0E50CC00B4840A /* SDMidiParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
