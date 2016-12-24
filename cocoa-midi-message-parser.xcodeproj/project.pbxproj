@@ -11,7 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		620BBACF1E0E4D3100B4840A /* cocoa-midi-message-parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "cocoa-midi-message-parser.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		620BBACF1E0E4D3100B4840A /* cocoa_midi_message_parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cocoa_midi_message_parser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		620BBAD21E0E4D3100B4840A /* cocoa-midi-message-parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cocoa-midi-message-parser.h"; sourceTree = "<group>"; };
 		620BBAD31E0E4D3200B4840A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +38,7 @@
 		620BBAD01E0E4D3100B4840A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				620BBACF1E0E4D3100B4840A /* cocoa-midi-message-parser.framework */,
+				620BBACF1E0E4D3100B4840A /* cocoa_midi_message_parser.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			);
 			name = "cocoa-midi-message-parser";
 			productName = "cocoa-midi-message-parser";
-			productReference = 620BBACF1E0E4D3100B4840A /* cocoa-midi-message-parser.framework */;
+			productReference = 620BBACF1E0E4D3100B4840A /* cocoa_midi_message_parser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -247,7 +247,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SD.cocoa-midi-message-parser";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cocoa_midi_message_parser;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -265,7 +265,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SD.cocoa-midi-message-parser";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = cocoa_midi_message_parser;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
