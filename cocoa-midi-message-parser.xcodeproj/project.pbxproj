@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		620BBAD41E0E4D3200B4840A /* cocoa-midi-message-parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 620BBAD21E0E4D3100B4840A /* cocoa-midi-message-parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		620BBAD41E0E4D3200B4840A /* cocoa_midi_message_parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 620BBAD21E0E4D3100B4840A /* cocoa_midi_message_parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		620BBADC1E0E50CC00B4840A /* SDMidiParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 620BBADA1E0E50CC00B4840A /* SDMidiParser.h */; };
 		620BBADD1E0E50CC00B4840A /* SDMidiParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 620BBADB1E0E50CC00B4840A /* SDMidiParser.m */; };
 		620BBAE01E0E50EA00B4840A /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620BBADF1E0E50EA00B4840A /* CoreMIDI.framework */; };
+		620BBAE41E0E536500B4840A /* midi-message-parser in Resources */ = {isa = PBXBuildFile; fileRef = 620BBAE31E0E536500B4840A /* midi-message-parser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		620BBACF1E0E4D3100B4840A /* cocoa_midi_message_parser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = cocoa_midi_message_parser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		620BBAD21E0E4D3100B4840A /* cocoa-midi-message-parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cocoa-midi-message-parser.h"; sourceTree = "<group>"; };
+		620BBAD21E0E4D3100B4840A /* cocoa_midi_message_parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cocoa_midi_message_parser.h; sourceTree = "<group>"; };
 		620BBAD31E0E4D3200B4840A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620BBADA1E0E50CC00B4840A /* SDMidiParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMidiParser.h; sourceTree = "<group>"; };
 		620BBADB1E0E50CC00B4840A /* SDMidiParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMidiParser.m; sourceTree = "<group>"; };
 		620BBADF1E0E50EA00B4840A /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		620BBAE31E0E536500B4840A /* midi-message-parser */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "midi-message-parser"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		620BBAC51E0E4D3100B4840A = {
 			isa = PBXGroup;
 			children = (
+				620BBAE31E0E536500B4840A /* midi-message-parser */,
 				620BBAD11E0E4D3100B4840A /* cocoa-midi-message-parser */,
 				620BBAD01E0E4D3100B4840A /* Products */,
 				620BBADE1E0E50EA00B4840A /* Frameworks */,
@@ -54,7 +57,7 @@
 		620BBAD11E0E4D3100B4840A /* cocoa-midi-message-parser */ = {
 			isa = PBXGroup;
 			children = (
-				620BBAD21E0E4D3100B4840A /* cocoa-midi-message-parser.h */,
+				620BBAD21E0E4D3100B4840A /* cocoa_midi_message_parser.h */,
 				620BBAD31E0E4D3200B4840A /* Info.plist */,
 				620BBADA1E0E50CC00B4840A /* SDMidiParser.h */,
 				620BBADB1E0E50CC00B4840A /* SDMidiParser.m */,
@@ -77,7 +80,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620BBAD41E0E4D3200B4840A /* cocoa-midi-message-parser.h in Headers */,
+				620BBAD41E0E4D3200B4840A /* cocoa_midi_message_parser.h in Headers */,
 				620BBADC1E0E50CC00B4840A /* SDMidiParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620BBAE41E0E536500B4840A /* midi-message-parser in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +267,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "midi-message-parser/src";
 				INFOPLIST_FILE = "cocoa-midi-message-parser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -281,6 +286,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "midi-message-parser/src";
 				INFOPLIST_FILE = "cocoa-midi-message-parser/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -309,6 +315,7 @@
 				620BBAD91E0E4D3200B4840A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

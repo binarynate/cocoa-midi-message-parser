@@ -7,6 +7,7 @@
 //
 
 #import "SDMidiParser.h"
+#import "midi.h"
 
 @implementation SDMidiParser
 

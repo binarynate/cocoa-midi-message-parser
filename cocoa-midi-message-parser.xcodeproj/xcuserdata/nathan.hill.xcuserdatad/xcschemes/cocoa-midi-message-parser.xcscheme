@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "620BBACE1E0E4D3100B4840A"
-               BuildableName = "cocoa-midi-message-parser.framework"
+               BuildableName = "cocoa_midi_message_parser.framework"
                BlueprintName = "cocoa-midi-message-parser"
                ReferencedContainer = "container:cocoa-midi-message-parser.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "620BBACE1E0E4D3100B4840A"
-            BuildableName = "cocoa-midi-message-parser.framework"
+            BuildableName = "cocoa_midi_message_parser.framework"
             BlueprintName = "cocoa-midi-message-parser"
             ReferencedContainer = "container:cocoa-midi-message-parser.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "620BBACE1E0E4D3100B4840A"
-            BuildableName = "cocoa-midi-message-parser.framework"
+            BuildableName = "cocoa_midi_message_parser.framework"
             BlueprintName = "cocoa-midi-message-parser"
             ReferencedContainer = "container:cocoa-midi-message-parser.xcodeproj">
          </BuildableReference>

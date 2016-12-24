@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreMIDI/CoreMIDI.h>
+#import "midi.h"
 
 @interface SDMidiParser : NSObject
 

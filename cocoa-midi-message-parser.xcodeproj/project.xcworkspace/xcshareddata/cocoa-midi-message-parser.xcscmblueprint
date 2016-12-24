@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F9C6CDAE02281B7823A5F06C8E3756DFCCA8C889",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E2425FCE4587AFDE8F70FB1C0F63E4835EB14826" : 9223372036854775807,
+    "F9C6CDAE02281B7823A5F06C8E3756DFCCA8C889" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "26AE7A87-6005-4AEA-A2C8-C52287E066F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E2425FCE4587AFDE8F70FB1C0F63E4835EB14826" : "cocoa-midi-message-parser\/midi-message-parser\/",
+    "F9C6CDAE02281B7823A5F06C8E3756DFCCA8C889" : "cocoa-midi-message-parser\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cocoa-midi-message-parser",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cocoa-midi-message-parser.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:binarynate\/midi-message-parser.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2425FCE4587AFDE8F70FB1C0F63E4835EB14826"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:binarynate\/cocoa-midi-message-parser.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F9C6CDAE02281B7823A5F06C8E3756DFCCA8C889"
+    }
+  ]
+}
