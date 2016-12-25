@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "cocoa-midi-flex-messenger"
+  s.name         = "cocoa-midi-message-parser"
   s.version      = "0.0.1"
   s.summary      = "Objective-C MIDI message parser."
 
