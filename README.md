@@ -1,6 +1,6 @@
-# Cocoa MIDI Message Processor
+# cocoa-midi-message-parser
 
-An Objective-C MIDI message parser.
+An Objective-C wrapper for the [midi-message-parser](https://github.com/BinaryNate/midi-message-parser) C library to allow it to be used in the [nativescript-midi] NativeScript plugin.
 
 ## Building
 
