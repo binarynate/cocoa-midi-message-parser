@@ -11,7 +11,8 @@
 
 @implementation SDMidiParser
 
-midi_message_parser_t *_messageParser;
+midi_message_parser_t *_messageParser = NULL;
+id<SDLoggerDelegate> _loggerDelegate = nil;
 
 - (id)init {
     self = [super init];
@@ -29,7 +30,7 @@ midi_message_parser_t *_messageParser;
 
 - (NSMutableArray *)parsePacketList: (MIDIPacketList *)packetList {
     
-    NSLog(@"Converting a MIDI packet list with %d messages", packetList->numPackets);
+    [self log: @"Converting a MIDI packet list with %d messages", packetList->numPackets];
     
     NSMutableArray *wrappedMidiMessages = [[NSMutableArray alloc] init];
     
@@ -56,5 +57,21 @@ midi_message_parser_t *_messageParser;
     return wrappedMidiMessages;
 }
 
+- (void)addLoggerDelegate:(id<SDLoggerDelegate>)delegate {
+    _loggerDelegate = delegate;
+}
+
+- (void) log: (NSString *)formatString, ... {
+    
+    if (!_loggerDelegate) {
+        return;
+    }
+    
+    va_list args;
+    va_start(args, formatString);
+    NSString *message = [[NSString alloc] initWithFormat:formatString arguments:args];
+    va_end(args);
+    [_loggerDelegate log: message];
+}
 
 @end

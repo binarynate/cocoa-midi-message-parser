@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreMIDI/CoreMIDI.h>
 #import "midi.h"
+#import "SDLoggerDelegate.h"
 
 @interface SDMidiParser : NSObject
 
@@ -17,5 +18,10 @@
  * each NSData instance encapsulates the data for a MIDI packet.
  */
 - (NSMutableArray *)parsePacketList: (MIDIPacketList *)packetList;
+
+/**
+ * Adds a delegate to provide an outlet for logging.
+ */
+- (void)addLoggerDelegate: (id<SDLoggerDelegate>)delegate;
 
 @end

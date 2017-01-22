@@ -14,6 +14,7 @@
 		623C0B401E0F292700F3BFD6 /* midi-message-parser in Resources */ = {isa = PBXBuildFile; fileRef = 623C0B3F1E0F292700F3BFD6 /* midi-message-parser */; };
 		623C0B451E0F2BCA00F3BFD6 /* midi.c in Sources */ = {isa = PBXBuildFile; fileRef = 623C0B431E0F2BCA00F3BFD6 /* midi.c */; };
 		623C0B461E0F2BCA00F3BFD6 /* midi.h in Headers */ = {isa = PBXBuildFile; fileRef = 623C0B441E0F2BCA00F3BFD6 /* midi.h */; };
+		62C5A9521E3550EA0052A5DA /* SDLoggerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C5A9511E3550EA0052A5DA /* SDLoggerDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		623C0B3F1E0F292700F3BFD6 /* midi-message-parser */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "midi-message-parser"; path = "/Users/nathan.hill/repos/sonic.design/cocoa-midi-message-parser/midi-message-parser"; sourceTree = "<absolute>"; };
 		623C0B431E0F2BCA00F3BFD6 /* midi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = midi.c; path = "midi-message-parser/src/midi.c"; sourceTree = "<group>"; };
 		623C0B441E0F2BCA00F3BFD6 /* midi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = midi.h; path = "midi-message-parser/src/midi.h"; sourceTree = "<group>"; };
+		62C5A9511E3550EA0052A5DA /* SDLoggerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLoggerDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				620BBAD31E0E4D3200B4840A /* Info.plist */,
 				620BBADA1E0E50CC00B4840A /* SDMidiParser.h */,
 				620BBADB1E0E50CC00B4840A /* SDMidiParser.m */,
+				62C5A9511E3550EA0052A5DA /* SDLoggerDelegate.h */,
 			);
 			path = "cocoa-midi-message-parser";
 			sourceTree = "<group>";
@@ -87,6 +90,7 @@
 			files = (
 				620BBAD41E0E4D3200B4840A /* cocoa_midi_message_parser.h in Headers */,
 				623C0B461E0F2BCA00F3BFD6 /* midi.h in Headers */,
+				62C5A9521E3550EA0052A5DA /* SDLoggerDelegate.h in Headers */,
 				620BBADC1E0E50CC00B4840A /* SDMidiParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
