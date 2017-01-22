@@ -37,6 +37,12 @@ id<SDLoggerDelegate> _loggerDelegate = nil;
     MIDIPacket *packet = &packetList->packet[0];
     for (int i = 0; i < packetList->numPackets; i++) {
         
+        [self log: @"Parsing packet %d with %d bytes:", i, packet->length];
+        
+        for (int byteIndex = 0; byteIndex < packet->length; byteIndex++) {
+            [self log: @"byte %d: %x", byteIndex, packet->data[byteIndex]];
+        }
+        
         midi_message_queue_t *messageQueue = parse_midi_messages(_messageParser, packet->data, packet->length);
         
         if (messageQueue) {
